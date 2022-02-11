@@ -2,7 +2,7 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.layout.BorderPane?>
-
+<?import java.net.URL?>
 
 <BorderPane
         fx:controller="com.citizen.id.controller.MainController"
@@ -12,6 +12,10 @@
       <Button
               fx:id="inbtn"
               onAction="#handleClickER"
-              text="Click me" BorderPane.alignment="CENTER" />
+              text="Click me"
+              styleClass="blueback" BorderPane.alignment="CENTER" />
    </center>
+   <stylesheets>
+      <URL value="@css/main.css"/>
+   </stylesheets>
 </BorderPane>
