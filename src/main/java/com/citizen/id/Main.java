@@ -15,16 +15,16 @@ import java.io.IOException;
 
 public class Main extends Application {
 
-		@Override
-		public void start(Stage primaryStage) throws IOException {
-				Parent pane = FXMLLoader.load(getClass().getResource("main.fxml"));
+    @Override
+    public void start(Stage primaryStage) throws IOException {
+        Parent pane = FXMLLoader.load(getClass().getResource("main.fxml"));
 
-				int height = 700;
-				int width = (int)(height * 1.618);
-				Scene scene = new Scene( pane, width, height);
+        int height = 700;
+        int width = (int) (height * 1.618);
+        Scene scene = new Scene(pane, width, height);
 
-				primaryStage.setScene( scene);
-				primaryStage.setTitle( "The Click Me App");
-				primaryStage.show();
-		}
+        primaryStage.setScene(scene);
+        primaryStage.setTitle("The Click Me App");
+        primaryStage.show();
+    }
 }

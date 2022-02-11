@@ -7,8 +7,13 @@ plugins {
 
 repositories {
     jcenter()
+    mavenCentral()
 }
 
 application {
     mainClassName = 'com.citizen.id.Main'
+}
+
+dependencies {
+    implementation group: 'com.jfoenix', name: 'jfoenix', version: '8.0.10'
 }
