@@ -2,18 +2,14 @@
 
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
-<?import javafx.scene.layout.AnchorPane?>
-
 <?import javafx.scene.layout.BorderPane?>
+
 <BorderPane prefHeight="341.0" prefWidth="575.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.citizen.id.controller.MainController">
    <center>
-      <ImageView fitHeight="241.0" fitWidth="393.0" layoutX="167.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="340.0" fitWidth="339.0" layoutX="167.0" layoutY="50.0" opacity="0.1" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../../../../../../../Downloads/fingerprint_scan_480px.png" />
+            <Image url="@images/big_fingerprint_scan_icon.png" />
          </image>
       </ImageView>
    </center>
-   <stylesheets>
-      <URL value="@css/main.css"/>
-   </stylesheets>
 </BorderPane>
