@@ -10,5 +10,5 @@ repositories {
 }
 
 application {
-    mainClassName = 'com.citizen.id.App'
+    mainClassName = 'com.citizen.id.Main'
 }
