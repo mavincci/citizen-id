@@ -4,26 +4,20 @@
 package com.citizen.id;
 
 import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
 
+import java.io.IOException;
+
 public class Main extends Application {
 
-		Button btn;
-		int clicked = 0;
-		String[] labels = {
-						"Not yet clicked", "Clicked"};
-
 		@Override
-		public void start(Stage primaryStage) {
-				btn = new Button();
-				btn.setText( "Click me");
-				btn.setOnAction( e -> buttonOnClick());
-
-				BorderPane pane = new BorderPane();
-				pane.setCenter( btn);
+		public void start(Stage primaryStage) throws IOException {
+				Parent pane = FXMLLoader.load(getClass().getResource("main.fxml"));
 
 				int height = 700;
 				int width = (int)(height * 1.618);
@@ -32,10 +26,5 @@ public class Main extends Application {
 				primaryStage.setScene( scene);
 				primaryStage.setTitle( "The Click Me App");
 				primaryStage.show();
-		}
-
-		private void buttonOnClick() {
-				clicked ^= 1;
-				btn.setText( labels[clicked]);
 		}
 }
