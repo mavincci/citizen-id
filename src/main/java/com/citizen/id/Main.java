@@ -17,7 +17,7 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws IOException {
-        Parent pane = FXMLLoader.load(getClass().getResource("main.fxml"));
+        Parent pane = FXMLLoader.load(getClass().getResource("registration_temp.fxml"));
 
         int height = 700;
         int width = (int) (height * 1.618);
